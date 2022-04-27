@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mobile-pgs": {
+      "hosting": {
+        "app": [
+          "mobile-pgs"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mobile-pgs"
+  }
+}
