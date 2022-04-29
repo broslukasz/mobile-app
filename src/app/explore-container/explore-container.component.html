@@ -1,4 +1,19 @@
 <div id="container">
   <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI
+    Components 2</a></p>
+
+  <form>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <input #food name="food" matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Leave a comment</mat-label>
+      <textarea #description [value]="description$ | async" matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+
+    <button (click)="upload(food.value, description.value)" mat-raised-button>Upload</button>
+  </form>
 </div>

@@ -9,4 +9,7 @@ export class Tab1Page {
 
   constructor() {}
 
+  upload($event: Event): void {
+    console.log('event', $event)
+  }
 }
